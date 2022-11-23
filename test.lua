@@ -25,7 +25,7 @@ while not pizza_found do
                 syn.queue_on_teleport([[
                     repeat wait() until game:IsLoaded() and game.Players.LocalPlayer.Character
                     Wait(1)
-                    loadfile("C:\\Users\\lukie\\Documents\\Synapse X\\scripts\\rgd\\pizza.lua")
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/lukieluke4/roproxy-lite/main/test.lua"))()
                 ]])
             end
         end)
