@@ -3,9 +3,9 @@ pizza_found = false
 print("pizza finding")
 while not pizza_found do
     pcall(function()
-        wait(10)
+        wait(7)
         fireclickdetector(game.Workspace.Room.Enemies.StartButton.ClickDetector)
-        wait(3)
+        wait(5)
         for i,v in pairs(game:service"Workspace".GenValues:GetDescendants()) do
             has_word = v.Name:find("izza", 1, true)
             if has_word == nil then
