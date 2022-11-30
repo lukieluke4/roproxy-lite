@@ -7,15 +7,11 @@ syn.queue_on_teleport([[
 local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
 local ammount = 10
 local delay_ = 0.01
-wait(8)
-pcall(function()
-	while True do
-		print(game.Workspace.Room.Enemies.StartButton.Name)
-	end
-end)
+wait(11)
 
 while true do 
 for _, v in ipairs(Backpack:GetChildren()) do
+	wait()
 	v.Parent = game.Players.LocalPlayer.Character
     if v.Name == "Capacitor" then 
         print("no")
@@ -24,9 +20,7 @@ for _, v in ipairs(Backpack:GetChildren()) do
     else
     	for _ = 1, ammount do
     		v:Activate()
-    		if delay_ then
-    			wait(delay_)
-    		end
+			wait()
     	end
 	end
 	v.Parent = Backpack
