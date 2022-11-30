@@ -10,6 +10,7 @@ local delay_ = 0.01
 wait(11)
 
 while true do 
+	wait()
 	pcall(function()
 	for _, v in ipairs(Backpack:GetChildren()) do
 		wait()
