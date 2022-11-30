@@ -9,6 +9,7 @@ syn.queue_on_teleport([[
 local retries = 0
 pizza = false
 game.Workspace.Gravity = 0
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = True
 while not pizza do
     --game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
     pcall(function()
