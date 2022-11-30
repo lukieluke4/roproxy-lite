@@ -8,6 +8,12 @@ local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
 local ammount = 10
 local delay_ = 0.01
 wait(8)
+pcall(function()
+	while True do
+		print(game.Workspace.Room.Enemies.StartButton.Name)
+	end
+end)
+
 while true do 
 for _, v in ipairs(Backpack:GetChildren()) do
 	v.Parent = game.Players.LocalPlayer.Character
