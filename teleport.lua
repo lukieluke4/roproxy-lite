@@ -17,7 +17,7 @@ while not pizza do
         -- fire on all objects
         for i,v in pairs(game:service"Workspace":GetDescendants()) do
             if v.Name == "Enemy" then
-                game.Players.LocalPlayer.Character:MoveTo(v.Parent.HumanoidRootPart.Position + Vector3.new(0,10,0))
+                game.Players.LocalPlayer.Character:MoveTo(v.Parent.Head.Position + Vector3.new(0,10,0))
             end         
         end
     end)
