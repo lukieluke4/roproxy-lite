@@ -15,7 +15,9 @@ pizza = false
 while not pizza do
     --game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
     pcall(function()
-        print(retries)
+        if retries > 0 then
+            print(retries)
+        end
         -- check for pizza, this is the most important part
         
 
@@ -86,8 +88,9 @@ while not pizza do
                     end
                     print("Price", lowestprice)
                     -- condition to restart
-                    print("Shopkeepers", game.Workspace.GenValues.ShopkeepersKilled)
+                    print("Shopkeepers", game.Workspace.GenValues.ShopkeepersKilled.Value)
                     if game.Players.LocalPlayer.NumValues.Circuits.Value < lowestprice then
+                        print("player is poor")
                         if game.Workspace.GenValues.ShopkeepersKilled.Value > 0 then
                             if retries > 5 then
                                 print("restarting")
