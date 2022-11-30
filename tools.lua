@@ -1,6 +1,6 @@
 syn.queue_on_teleport([[
   repeat wait() until game:IsLoaded() and game.Players.LocalPlayer.Character
-  Wait(1)
+  Wait(8)
   loadstring(game:HttpGet("https://raw.githubusercontent.com/lukieluke4/roproxy-lite/main/tools.lua"))()
 ]])
 
