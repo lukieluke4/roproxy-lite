@@ -51,7 +51,7 @@ while not pizza do
             -- attack all enemies
 
             -- click all buttons
-            if v.Name == "Button" then
+            if v.Name == "Button" or v.Name == "StartButton" or v.Name == "MysteryButton" then
                 wait(.25)
                 fireclickdetector(v.ClickDetector)
             end
