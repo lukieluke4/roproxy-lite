@@ -10,19 +10,21 @@ local delay_ = 0.01
 wait(11)
 
 while true do 
-for _, v in ipairs(Backpack:GetChildren()) do
-	wait()
-	v.Parent = game.Players.LocalPlayer.Character
-    if v.Name == "Capacitor" then 
-        print("no")
-    elseif v.Name == "Upgrade Module" then
-        print("no")
-    else
-    	for _ = 1, ammount do
-    		v:Activate()
-			wait()
-    	end
+	pcall(function()
+	for _, v in ipairs(Backpack:GetChildren()) do
+		wait()
+		v.Parent = game.Players.LocalPlayer.Character
+	    if v.Name == "Capacitor" then 
+		print("no")
+	    elseif v.Name == "Upgrade Module" then
+		print("no")
+	    else
+		for _ = 1, ammount do
+			v:Activate()
+				wait()
+		end
+		end
+		v.Parent = Backpack
 	end
-	v.Parent = Backpack
-end
+end)
 end
