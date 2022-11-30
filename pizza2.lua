@@ -91,8 +91,13 @@ while not pizza do
                         if game.Workspace.GenValues.ShopkeepersKilled > 0 then
                             if retries > 5 then
                                 print("restarting")
-                                game.Players.LocalPlayer.Character.Humanoid:TakeDamage(100)
-                                retries = 0
+                                local Remote = game.ReplicatedStorage['GuiEvent']
+
+                                local Arguments = {
+                                        [1] = "Restart"
+                                }
+
+                                Remote:FireServer(unpack(Arguments))
                                 print("restarting")
                             end
                             wait(.5)
