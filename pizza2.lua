@@ -88,7 +88,7 @@ while not pizza do
                     -- condition to restart
                     print("Shopkeepers", game.Workspace.GenValues.ShopkeepersKilled)
                     if game.Players.LocalPlayer.NumValues.Circuits.Value < lowestprice then
-                        if game.Workspace.GenValues.ShopkeepersKilled > 0 then
+                        if game.Workspace.GenValues.ShopkeepersKilled.Value > 0 then
                             if retries > 5 then
                                 print("restarting")
                                 local Remote = game.ReplicatedStorage['GuiEvent']
