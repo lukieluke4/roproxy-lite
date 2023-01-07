@@ -14,7 +14,6 @@ local handle = nil
 while true do
     --game.Players.LocalPlayer.Character.Humanoid.JumpPower = 0
     pcall(function()
-        print(retries)
         -- check for pizza, this is the most important part
         
         -- get handle for attacking enemies
